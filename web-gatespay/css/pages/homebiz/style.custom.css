@@ -1,0 +1,405 @@
+    /* main */
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .bg-gbiz {
+        background-color: #242424;
+    }
+    
+    .text-gp {
+        color: #4E1D79 !important;
+    }
+    
+    .text-gp>svg {
+        fill: #4E1D79;
+    }
+    
+    .text-gbiz {
+        color: #EE7203 !important;
+    }
+    
+    .text-gbiz>svg {
+        fill: #EE7203;
+    }
+    
+    .text-center-sm {
+        text-align: inherit;
+    }
+    /* custom button*/
+    
+    .btn.btn-gp {
+        color: #FFFFFF;
+        background-color: #4E1D79;
+        border-color: #4E1D79;
+    }
+    
+    .btn.btn-gp:hover:not(.btn-text):not(:disabled):not(.disabled),
+    .btn.btn-gp:focus:not(.btn-text),
+    .btn.btn-gp.focus:not(.btn-text) {
+        color: #FFFFFF;
+        background-color: #673ab7;
+        border-color: #673ab7;
+    }
+    
+    .btn.btn-gp-secondary {
+        color: #FFFFFF;
+        background-color: #EE7203;
+        border-color: #EE7203;
+    }
+    
+    .btn.btn-gp-secondary:hover:not(.btn-text):not(:disabled):not(.disabled),
+    .btn.btn-gp-secondary:focus:not(.btn-text),
+    .btn.btn-gp-secondary.focus:not(.btn-text) {
+        color: #FFFFFF;
+        background-color: #ff9800;
+        border-color: #ff9800;
+    }
+    
+    .btn.btn-gp-secondary-outlined {
+        color: #fff;
+        background-color: transparent;
+        border-color: #fff;
+    }
+    
+    .btn.btn-gp-secondary-outlined:hover:not(.btn-text):not(:disabled):not(.disabled),
+    .btn.btn-gp-secondary-outlined:focus:not(.btn-text),
+    .btn.btn-gp-secondary-outlined.focus:not(.btn-text) {
+        color: #EE7203;
+        background-color: rgba(255, 255, 255, 0.74);
+        border-color: #fff;
+    }
+    
+    .btn-menu-responsive {
+        width: auto;
+    }
+    /*list */
+    
+    .pointer-list ol {
+        list-style-type: none;
+        counter-reset: item;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .pointer-list li {
+        display: table;
+        counter-increment: item;
+        margin-bottom: 0.6em;
+        font-weight: 700;
+        color: #4E1D79
+    }
+    
+    .pointer-list li:before {
+        content: counters(item, ".") ". ";
+        display: table-cell;
+        padding-right: 0.6em;
+    }
+    
+    .pointer-list li li {
+        margin-left: 15px;
+        font-weight: 500;
+        color: #3F4254;
+    }
+    
+    .pointer-list p {
+        font-weight: 500;
+        color: #3F4254;
+    }
+    
+    .pointer-list ol.custom-ordered-list {
+        list-style-type: lower-alpha;
+    }
+    
+    .custom-ordered-list li {
+        display: list-item;
+    }
+    
+    .custom-ordered-list li:before {
+        content: none;
+    }
+    /*section 1*/
+    
+    .bg-main-gbiz {
+        background: #EE7203;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #EE7203, #E85D00);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #EE7203, #E85D00);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    
+    .bg-second-layer {
+        background-size: contain;
+        background-position-x: 90%;
+        background-position-y: bottom;
+        background-image: url("../../../media/gates/APPS_MP_GB_1_Supercharge_doodles.png");
+    }
+    
+    .img-section-1 {
+        width: 100%;
+        height: auto;
+    }
+    
+    .main-text {
+        text-align: left;
+    }
+    
+    .main-text h1 {
+        font-size: 3.2rem;
+        line-height: normal;
+    }
+    
+    .main-text h3 {
+        font-size: 1.8rem;
+    }
+    
+    .anim-text {
+        font-weight: 900;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #f35626;
+        background-image: -webkit-linear-gradient(92deg, #ffd900, #3af1fe);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: hue 10s infinite linear;
+    }
+    /*section 2*/
+    
+    .bg-section-2 {
+        background-size: 22%;
+        background-position-x: right;
+        background-position-y: center;
+        background-image: url("../../../media/gates/bg-blur-line-dot-2.png");
+    }
+    
+    .img-section-2 {
+        height: 700px;
+    }
+    
+    .modal-backdrop {
+        opacity: 0.7 !important;
+        background-color: #000;
+    }
+    
+    .img-modal {
+        width: 100%;
+    }
+    
+    @-webkit-keyframes hue {
+        from {
+            -webkit-filter: hue-rotate(0deg);
+        }
+        to {
+            -webkit-filter: hue-rotate(-360deg);
+        }
+    }
+    /*section 3*/
+    
+    .section-3-height {
+        min-height: 1000px;
+    }
+    /*section 4*/
+    
+    #content_4 {
+        height: 860px;
+    }
+    
+    #content_4 h1 {
+        font-size: 2rem;
+    }
+    
+    video {
+        object-fit: contain;
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+    /*section 5*/
+    
+    .rounded-xl-top {
+        border-top-left-radius: 1.25rem !important;
+        border-top-right-radius: 1.25rem !important;
+    }
+    /*section footer*/
+    
+    .navi .navi-item .navi-link .navi-text {
+        color: rgb(255 255 255 / 60%);
+    }
+    
+    .navi .navi-item .navi-link .navi-icon i {
+        color: rgb(255 255 255 / 60%);
+    }
+    
+    .btn.btn-whatsapp i {
+        color: #ffffff;
+    }
+    
+    .btn.btn-whatsapp {
+        color: #ffffff;
+        background-color: #4caf50;
+        border-color: #4caf50;
+    }
+    
+    .btn.btn-whatsapp:hover:not(.btn-text):not(:disabled):not(.disabled),
+    .btn.btn-whatsapp:focus:not(.btn-text),
+    .btn.btn-whatsapp.focus:not(.btn-text) {
+        color: #ffffff;
+        background-color: #43a047;
+        border-color: #43a047;
+    }
+    
+    .navi .navi-item .navi-link:hover .navi-text {
+        color: #ee7203;
+    }
+    
+    .navi .navi-item .navi-link:hover .navi-icon i {
+        color: #ee7203;
+    }
+    /*scrolltop*/
+    
+    .scrolltop {
+        background-color: #EE7203;
+    }
+    /*responsive*/
+    /*start screen size 992px*/
+    /*navigation*/
+    
+    @media (min-width: 992px) {
+        .header-menu .menu-nav>.menu-item>.menu-link .menu-text {
+            font-size: 1.15rem;
+        }
+        .header-menu .menu-nav>.menu-item>.menu-link .menu-text {
+            color: #333333;
+            font-weight: 500;
+        }
+        .header-menu .menu-nav>.menu-item.menu-item-active>.menu-link .menu-text {
+            color: #f35626;
+            font-weight: 700;
+        }
+        .header-fixed[data-header-scroll="on"] .header-menu .menu-nav>.menu-item.menu-item-active>.menu-link .menu-text {
+            color: #f35626;
+        }
+        .header-fixed[data-header-scroll="on"] .header-menu .menu-nav>.menu-item:hover:not(.menu-item-here):not(.menu-item-active)>.menu-link,
+        .header-fixed[data-header-scroll="on"] .header-menu .menu-nav>.menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active)>.menu-link,
+        .header-fixed[data-header-scroll="on"] .header-menu .menu-nav>.menu-item.menu-item-here>.menu-link,
+        .header-fixed[data-header-scroll="on"] .header-menu .menu-nav>.menu-item.menu-item-active>.menu-link {
+            background-color: #ffffff00;
+        }
+        .header-menu .menu-nav>.menu-item.menu-item-active>.menu-link .menu-text::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #ff5722;
+        }
+        .header-menu .menu-nav>.menu-item:hover:not(.menu-item-here):not(.menu-item-active)>.menu-link .menu-text,
+        .header-menu .menu-nav>.menu-item.menu-item-hover:not(.menu-item-here):not(.menu-item-active)>.menu-link .menu-text,
+        .header-menu .menu-nav>.menu-item.menu-item-here>.menu-link .menu-text {
+            color: #f35626;
+            font-weight: 700;
+        }
+        .header-menu .menu-nav>.menu-item .menu-link .menu-text {
+            display: block;
+        }
+        .header-menu .menu-nav>.menu-item .menu-link .menu-text::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #ff5722;
+            transition: width .3s;
+        }
+        .header-menu .menu-nav>.menu-item .menu-link .menu-text:hover::after {
+            width: 100%;
+        }
+    }
+    /* Section 1 */
+    
+    @media screen and (max-width: 1300px) and (min-width: 721px) {
+        .img-section-1 {
+            width: 100%;
+            height: auto;
+        }
+        .img-section-4 {
+            height: 510px;
+        }
+        .img-section-2 {
+            height: 510px;
+        }
+    }
+    
+    @media screen and (max-width: 1200px) and (min-width: 1000px) {
+        .bg-second-layer {
+            background-position-x: 110%;
+        }
+    }
+    
+    @media screen and (max-width: 999px) and (min-width: 721px) {
+        .bg-second-layer {
+            background-size: 60%;
+            background-position-x: 120%;
+        }
+        #content_4 {
+            height: 480px;
+        }
+    }
+    
+    @media (max-width: 720px) {
+        .bg-second-layer {
+            background-image: none;
+        }
+        .btn-menu-responsive {
+            width: 160px;
+        }
+        .text-center-sm {
+            text-align: center !important;
+        }
+        .bg-eclipse {
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: -100px;
+            background-image: url("../../../media/gates/eclipise-bg-gates-pay.webp");
+        }
+        .section-3-height {
+            min-height: 300px;
+        }
+        .img-section-1 {
+            width: 100%;
+            height: auto;
+        }
+        .img-section-4 {
+            width: auto;
+            height: 450px;
+        }
+        .main-text {
+            text-align: center;
+        }
+        .main-text h1 {
+            font-size: 2rem;
+            line-height: normal;
+        }
+        .main-text h3 {
+            font-size: 1.2rem;
+        }
+        #content_4 {
+            height: 240px;
+        }
+        #content_4 h1 {
+            font-size: 1rem;
+        }
+    }
+    /* section 2*/
+    
+    @media (max-width: 600px) {
+        .bg-section-2 {
+            background-size: contain;
+            background-position-x: right;
+            background-position-y: top;
+            background-image: url(../../assets/media/gates/bg-blur-line-dot-2.png);
+        }
+        .section-5-height {
+            min-height: 400px;
+        }
+    }
